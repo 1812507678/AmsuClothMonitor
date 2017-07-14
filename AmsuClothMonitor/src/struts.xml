@@ -4,9 +4,19 @@
     "http://struts.apache.org/dtds/struts-2.0.dtd">  
   
 <struts>  
-    <package name="UserInfoAction" extends="struts-default">  
+    <package name="UserInfoAction" extends="json-default,struts-default">  
         <action name="UserInfoAction" class="com.amsu.clothmonitor.action.UserInfoAction"> 
-            <result name="success">/index.jsp</result>  
-        </action>       
+            <result type="json" name="success">/index.jsp</result>  
+        </action>   
+        
+        <action name="AddUserInfoAction" class="com.amsu.clothmonitor.action.UserInfoAction" method="addOnlineUser"> 
+        </action>   
+        
+        <action name="sendNotificationAction" class="com.amsu.clothmonitor.action.UserInfoAction" method="sendNotification"> 
+        </action> 
+        
+        <action name="deleteOnlineUserAction" class="com.amsu.clothmonitor.action.UserInfoAction" method="deleteOnlineUser"> 
+        </action> 
+        
     </package>  
 </struts>  

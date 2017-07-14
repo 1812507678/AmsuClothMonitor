@@ -4,10 +4,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<script type="text/javascript"> 
-	var txt = '<s:property value="message"/>';
-	alert(txt);
-	</script> 
+
 	
 <meta charset="utf-8">
 <title>智能运动衣监控</title>
@@ -35,8 +32,8 @@
 			    <div class="list_box" id="list_box">
 			        <script type="text/template" data-id="list_tpl">
 			            <div class="right_icon_list_item">
-			                <img src="$url$" class="right_usericon" />
-			                <p>$content$</p>
+			                <img src="$iconUrl$" class="right_usericon" />
+			                <p>$username$</p>
 			            </div>
 			        </script>
 			    </div>
